@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body, img {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: 18px;
+  letter-spacing: 0.4px;
+  font-weight: 545;
+  font-family: math;
+}
+
+.parent-container {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  flex-direction: column;
+}
+
+.img-container-1 {
+  height: 17.2rem;
+  width: 78.4rem;
+  border: 2px solid darkgreen;
+  overflow: hidden;
+}
+.img-container-1 img {
+  margin-left: -4px;
+  width: 1259px;
+  height: 44rem;
+}
+.img-container-1 p {
+  padding: 4px;
+  margin-left: 10px;
+}
+
+.img-container-2 {
+  height: 18rem;
+  width: 78.4rem;
+  border: 2px solid darkgreen;
+  overflow: hidden;
+  position: relative;
+}
+.img-container-2 img {
+  margin-left: -4px;
+  width: 1259px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+.img-container-2 p {
+  padding: 10px;
+}
+
+.img-container-3 {
+  height: 300px;
+  width: 500px;
+  border: 2px solid teal;
+}
+.img-container-3 img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}/*# sourceMappingURL=temp.css.map */

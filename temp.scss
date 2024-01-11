@@ -1,0 +1,97 @@
+
+// Reset default styles for all elements
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  // Reset default styles for body and images
+  body, img {
+    margin: 0;
+    padding: 0;
+  }
+  
+  // Define a mixin for common image formatting styles
+  @mixin img-formatting {
+    margin-left: -4px;
+    width: 1259px;
+  }
+  
+  // Global paragraph styles
+  p {
+    font-size: 18px;
+    letter-spacing: 0.4px;
+    font-weight: 545;
+    font-family: math;
+  }
+  
+  // Styles for the parent container
+  .parent-container {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    flex-direction: column;
+    .img-3{
+      position: absolute;
+      left: 179px;
+      bottom: 33px;
+    }
+  }
+  
+  // Styles for img-container-1
+  .img-container-1 {
+    height: 17.2rem;
+    width: 78.4rem;
+    border: 2px solid darkgreen;
+    overflow: hidden;
+  
+    img {
+      // Apply common image formatting styles
+      @include img-formatting;
+      height: 44rem;
+    }
+  
+    p {
+      padding: 4px;
+      margin-left: 10px;
+    }
+  }
+  
+  // Styles for img-container-2
+  .img-container-2 {
+    height: 18rem;
+    width: 78.4rem;
+    border: 2px solid darkgreen;
+    overflow: hidden;
+    position: relative;
+  
+    img {
+      // Apply common image formatting styles
+      @include img-formatting;
+      height: 100%;
+      object-fit: cover;
+      object-position: bottom;
+    }
+  
+    p {
+      padding: 10px;
+    }
+  }
+
+  
+  // Styles for img-container-3
+  .img-container-3 {
+    height: 300px;
+    width: 500px;
+    border: 2px solid teal;
+  
+    img {
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+  
